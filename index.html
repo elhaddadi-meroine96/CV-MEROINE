@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Enio Rem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+
+    <div class="intro">
+        <h1>Meroine</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="logo">portfolio</div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/meroine-el-haddadi/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/elhaddadi-meroine96"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <header class="header">
+                <h1>Meroine</h1>
+                <p>My name is Meroine, I'm 22 years old. I'm from Belgium,I work as a junior web developer in Charleroi. I learned how to code at BeCode in Charleroi. Right now I'm looking for a  traineeship. You can download my CV down below :).  </p>
+                     <a href="CV-MEROINE.pdf">DOWNLOAD MY CV</a>
+
+            </header>
+
+            <footer class="bottom-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h6>GRAPHIST</h6>
+                            <p>I studied for about 2 years at IETSPS in Charleroi how to design things with Photoshop and Illustrator.</p>
+                        </div>
+                        <div class="col-lg-4">
+                                <h6>JUNIOR WEB DEVELOPER</h6>
+                                <p>At BeCode I learned how to code with HTML5, CSS3, Bootstrap 4, JavaScript, and PHP. Also how to design a website with Adobe Xd.  </p>
+                            </div>
+                            <div class="col-lg-4">
+                                    <h6>PASSIONATE</h6>
+                                    <p>I'm very passionate about my work, I'm also a creative person, I love architecture, design, contemporary art
+                                            ... </p>
+                            </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    <script>
+    
+    TweenMax.to(".intro h1",2,{
+        opacity:0,
+        y:-60,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".intro",2,{
+        delay:1,
+        top:"-100%",
+        ease: Expo.easeInOut
+    })
+
+
+    TweenMax.from(".row h6",2,{
+        delay:1.2,
+        opacity:0,
+        y:40,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".row p",2,{
+        delay:1.4,
+        opacity:0,
+        y:20,
+        ease: Expo.easeInOut
+    })
+
+    </script>
+</body>
+</html>
